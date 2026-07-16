@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Adry Gracio</title>
+    <link rel="icon" type="image/png" href="assets/utlogo_shield.png">
+    <link rel="apple-touch-icon" href="assets/utlogo_shield.png">
+
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+    .collapsible {
+      background-color: #fafaf8;
+      color: #1a1a1a; 
+      cursor: pointer;
+      padding: 5px;
+      margin: 0;
+      width: 30%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 14px;
+      font-family: inherit; 
+    }
+
+    .active, .collapsible:hover {
+      background-color: #fafaf8;
+    }
+
+    .content {
+      padding: 0 10px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #fafaf8;
+    }
+    .content p {
+        margin: 5px 0;
+    }
+    </style>
+</head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7C55DFPKCZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7C55DFPKCZ');
+</script>
+    
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="assets/profile_circle_alt2.png" alt="Adry Gracio" width="160" height="160"><br>
+        <h1><b>Adry Gracio</b></h1>
+        <p>Ph.D. Student<br>
+        Department of Economics<br>  
+        The University of Texas at Austin <br>
+        Austin, TX, USA <br>  
+        <a href="mailto:agracio@utexas.edu" target ="_blank">agracio@utexas.edu</a>
+        </p>
+      </header>
+      <section>
+        <p> <i>Horas!</i> I am a PhD student in Economics at UT Austin. My research interests currently are macroeconomics and international trade.</p>
+
+        <p> Before my PhD, I was an economist in the Policy and Strategy Unit (Senior Management Office) at <a href="https://prospera.or.id" target ="_blank">Australia Indonesia Partnership for Economic Development (Prospera)</a>. I hold an MSc in Financial Economics from the London School of Economics, and a BEcon in Economics from Universitas Indonesia.</p>
+
+        <p> Please don't hesitate to reach out to chat! </p>
+
+        <!-- <p> <strong> <i> This site is still under construction. </i> </strong> </p> -->
+
+      </section>
+
+      <section>
+        <h3><b>Working Papers</b></h3> 
+
+        <h6><b><a href="paper/Risk_Trade_Location.pdf" target="_blank">Supply Chains, Trade and Economic Fragility</a></b> </h6>
+        with <a href="https://www.castrovincenzi.com" target="_blank">Juanma Castro-Vincenzi</a>,
+          <a href="https://www.econgaurav.com" target="_blank">Gaurav Khanna</a> and
+          <a href="https://sites.google.com/site/nityapandalainayar/home" target="_blank">Nitya Pandalai-Nayar</a><br>
+          <button class="collapsible">Abstract</button>
+        <div class="content">
+          <p>We study how equilibrium patterns of production, trade, and input sourcing in complex supply chains are shaped by aggregate risk. We develop a quantitative multi-country model with multi-sourcing across stages. We show that sourcing shares equal an input's expected output elasticity — its expected marginal contribution to output across states of the world. Risk has a positional effect on sourcing and welfare, operating through offsetting cross-stage complementarity and within-stage substitutability; which one dominates is a quantitative question. An increase in a country's own risk always lowers its welfare; risk elsewhere has ambiguous, sometimes positive, effects through relative prices. We also show analytically that risk attenuates comparative advantage, as countries shift sourcing away from their most productive suppliers. Quantifying the model for 50 countries and 3 production stages, we show that supply-chain complexity lowers volatility for the riskiest countries, and rising Chinese-origin risk reallocates production and lowers welfare unevenly across the chain. </p>
+        </div> 
+      </section>
+
+      <footer>
+        <p><small>Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
+  </body>
+</html>

@@ -22,7 +22,7 @@ h6 {
   color:#121212;
   font-weight:400;
   margin:10px 0 0;
-  font: 16px/1.5 "Libre Franklin", sans-serif;
+  font: inherit
 }
 
 p, ul, ol, table, pre, dl {
@@ -64,7 +64,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:780px;
+  width:860px;
   margin:0 auto;
 }
 
@@ -179,7 +179,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:580px;
   float:right;
   padding-bottom:20px;
 }
